@@ -25,9 +25,9 @@ UCSF is a universal class schedule format that can be used to describe the class
 ```yaml
 subjects:
   - name: Math
-    simplified_name: M # Better for Chinese subject name
-    teacher: Mr. A
-    room: 101
+    simplified_name: M # Optional, Better for Chinese subject name
+    teacher: Mr. A # Optional
+    room: 101 # Optional
   - name: English
     simplified_name: E
     teacher: Mr. B
