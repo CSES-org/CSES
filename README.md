@@ -72,7 +72,6 @@ schedules:
       - subject: English
         start_time: 9:00
         end_time: 10:00
-  ...
 ```
 
 ## License
