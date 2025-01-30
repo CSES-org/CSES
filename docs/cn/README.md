@@ -49,31 +49,31 @@ schedules:
     weeks: all
     classes:
       - subject: 数学
-        start_time: 8:00
-        end_time: 9:00
+        start_time: "08:00:00"
+        end_time: "09:00:00"
       - subject: 语文
-        start_time: 9:00
-        end_time: 10:00
+        start_time: "09:00:00"
+        end_time: "10:00:00"
   - name: 星期二-单周
     enable_day: tue
     weeks: odd
     classes:
       - subject: 物理
-        start_time: 8:00
-        end_time: 9:00
+        start_time: "08:00:00"
+        end_time: "09:00:00"
       - subject: 英语
-        start_time: 9:00
-        end_time: 10:00
+        start_time: "09:00:00"
+        end_time: "10:00:00"
   - name: 星期二-双周
     enable_day: tue
     weeks: even
     classes:
       - subject: 物理
-        start_time: 8:00
-        end_time: 9:00
+        start_time: "08:00:00"
+        end_time: "09:00:00"
       - subject: 英语
-        start_time: 9:00
-        end_time: 10:00
+        start_time: "09:00:00"
+        end_time: "10:00:00"
 ```
 
 ## 协议

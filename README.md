@@ -48,31 +48,31 @@ schedules:
     weeks: all
     classes:
       - subject: Math
-        start_time: 8:00
-        end_time: 9:00
+        start_time: "08:00:00"
+        end_time: "09:00:00"
       - subject: English
-        start_time: 9:00
-        end_time: 10:00
+        start_time: "09:00:00"
+        end_time: "10:00:00"
   - name: Tuesday-Odd
     enable_day: tue
     weeks: odd
     classes:
       - subject: Physics
-        start_time: 8:00
-        end_time: 9:00
+        start_time: "08:00:00"
+        end_time: "09:00:00"
       - subject: English
-        start_time: 9:00
-        end_time: 10:00
+        start_time: "09:00:00"
+        end_time: "10:00:00"
   - name: Tuesday-Even
     enable_day: tue
     weeks: even
     classes:
       - subject: Chemistry
-        start_time: 8:00
-        end_time: 9:00
+        start_time: "08:00:00"
+        end_time: "09:00:00"
       - subject: English
-        start_time: 9:00
-        end_time: 10:00
+        start_time: "09:00:00"
+        end_time: "10:00:00"
 ```
 
 ## License
