@@ -3,9 +3,9 @@
 
 <image src="http://m.qpic.cn/psc?/V51UyG6T2hLdbN0oEgHl3fEkH73KqJt7/TmEUgtj9EK6.7V8ajmQrEEsEylM*52lTktZHLze*PTbMCd2wg4o5kkEyKNVsVL9UM5xK4GLClF.TOL*ty*FnqAuxBQmobbAoJ.gYMo62EQY!/mnull&bo=wADAAAAAAAADByI!&rf=photolist&t=5" height="64"/>
 
-# UCSF
+# CSES
 
-通用的课程表格式
+通用的课程表交换格式
 
 [**English**](../../README.md) | **中文简体**
 
@@ -13,13 +13,13 @@
 
 ## 简介
 
-UCSF 是一种通用的课程表格式，用于描述课程表。它被设计为简单易用，可以轻松转换为其他格式，如 ClassIsland 格式。
+CSES 是一种通用的课程表交换格式，用于在不同软件之间交换课程表。它被设计为简单易用，可以轻松转换为其他格式，如 ClassIsland 格式。
 
 ## 特点
 
-- **简单**: UCSF 被设计为简单易用。
-- **通用**: UCSF 是一种通用格式，可以轻松转换为其他格式。
-- **易用**: UCSF 易于使用，可以轻松被人类理解。
+- **简单**: CSES 被设计为简单易用。
+- **通用**: CSES 是一种通用格式，可以轻松转换为其他格式。
+- **易用**: CSES 易于使用，可以轻松被人类理解。
 
 ## 示例
 

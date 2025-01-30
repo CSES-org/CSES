@@ -2,9 +2,9 @@
 
 <image src="http://m.qpic.cn/psc?/V51UyG6T2hLdbN0oEgHl3fEkH73KqJt7/TmEUgtj9EK6.7V8ajmQrEEsEylM*52lTktZHLze*PTbMCd2wg4o5kkEyKNVsVL9UM5xK4GLClF.TOL*ty*FnqAuxBQmobbAoJ.gYMo62EQY!/mnull&bo=wADAAAAAAAADByI!&rf=photolist&t=5" height="64"/>
 
-# UCSF
+# CSES
 
-The Universal Class Schedule Format
+The Course Schedule Exchange Schema
 
 **English** | [**中文简体**](./docs/cn/README.md)
 
@@ -12,13 +12,13 @@ The Universal Class Schedule Format
 
 ## Introduction
 
-UCSF is a universal class schedule format that can be used to describe the class schedule. It is designed to be simple and easy to use, and can be easily converted to other formats such as ClassIsland format.
+CSES is a universal course schedule exchange schema that can be used for exchanging schedules between different software. It is designed to be simple and easy to use, and can be easily converted to other formats such as ClassIsland format.
 
 ## Features
 
-- **Simple**: UCSF is designed to be simple and easy to use.
-- **Universal**: UCSF is a universal format that can be easily converted to other formats.
-- **Easy to use**: UCSF is easy to use and can be easily understood by humans.
+- **Simple**: CSES is designed to be simple and easy to use.
+- **Universal**: CSES is a universal format that can be easily converted to other formats.
+- **Easy to use**: CSES is easy to use and can be easily understood by humans.
 
 ## Example
 
