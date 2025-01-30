@@ -20,7 +20,7 @@ CSES is a universal course schedule exchange schema that can be used for exchang
 - **Universal**: CSES is a universal format that can be easily converted to other formats.
 - **Easy to use**: CSES is easy to use and can be easily understood by humans.
 
-## Example
+## Schema
 
 ```yaml
 version: 1
