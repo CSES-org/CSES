@@ -24,6 +24,7 @@ UCSF 是一种通用的课程表格式，用于描述课程表。它被设计为
 ## 示例
 
 ```yaml
+version: 1
 subjects:
   - name: 数学
     simplified_name: 数 # 可选，适合中文科目名，ClassIsland 等紧凑课程表软件一般需要

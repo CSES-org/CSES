@@ -23,6 +23,7 @@ UCSF is a universal class schedule format that can be used to describe the class
 ## Example
 
 ```yaml
+version: 1
 subjects:
   - name: Math
     simplified_name: M # Optional, Better for Chinese subject name
