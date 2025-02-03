@@ -21,61 +21,65 @@ CSES 是一种通用的课程表交换格式，用于在不同软件之间交换
 - **通用**: CSES 是一种通用格式，可以轻松转换为其他格式。
 - **易用**: CSES 易于使用，可以轻松被人类理解。
 
-## 示例
+## 规范
+
+### 先决条件
+- 必须采用 UTF-8 编码
+- 只能采用空格缩进，不允许使用制表符
+- 文件开头要有标识符
+
+### 标识符
 
 ```yaml
-version: 1
-subjects:
-  - name: 数学
-    simplified_name: 数 # 可选，适合中文科目名，ClassIsland 等紧凑课程表软件一般需要
-    teacher: 李梅 # 可选
-    room: 101 # 可选
-  - name: 语文
-    simplified_name: 语
-    teacher: 王芳
-    room: 102
-  - name: 英语
-    simplified_name: 英
-    teacher: 张伟
-    room: 103
-  - name: 物理
-    simplified_name: 物
-    teacher: 赵军
-    room: 104
-
-schedules:
-  - name: 星期一
-    enable_day: mon
-    weeks: all
-    classes:
-      - subject: 数学
-        start_time: "08:00:00"
-        end_time: "09:00:00"
-      - subject: 语文
-        start_time: "09:00:00"
-        end_time: "10:00:00"
-  - name: 星期二-单周
-    enable_day: tue
-    weeks: odd
-    classes:
-      - subject: 物理
-        start_time: "08:00:00"
-        end_time: "09:00:00"
-      - subject: 英语
-        start_time: "09:00:00"
-        end_time: "10:00:00"
-  - name: 星期二-双周
-    enable_day: tue
-    weeks: even
-    classes:
-      - subject: 物理
-        start_time: "08:00:00"
-        end_time: "09:00:00"
-      - subject: 英语
-        start_time: "09:00:00"
-        end_time: "10:00:00"
+!Data
+Name: # 课表名称
+Type: CSES
+Version: # 采用的 CSES 版本
 ```
 
+### 课程声明
+
+```yaml
+Subjects:
+    - Name: 语文
+      SimplifiedName: 语 # Optional
+      Teacher: Mr. A # Optional
+      Room: 101 # Optional
+      IsOutDoorClass: false # Optional, default. false
+    - Name: 数学
+```
+
+### 时间线声明
+
+```yaml
+TimeTable:
+    - Id: # 编号，非可选
+    - Name: 
+    - TimeZone: # Optional, default. UTC+08:00
+    - WeekDiv: # int, Optional，舍弃WeekTotal，根据WeekDiv自动读取，要求WeekDiv必须连续
+    - TimeSlot:
+        - Name: 
+          Id: # 非可选
+          Type: # 待定，如早读、晚自习之类的玩意，非可选
+          StartTime: "hh:mm:ss"
+          EndTime: "hh:mm:ss"
+    - TimeSlot: 
+        # ...
+```
+
+### 课表安排
+```yaml
+Schedule:
+    - Name: "Monday" # string
+      TimeTable: # int
+      EnableDay: 1
+      Classes:
+        - Subject:
+          TimeSlot: #int
+        - Subject:
+          TimeSlot:
+    - Name: "Tuesday"
+```
 ## 协议
 
 [MIT](./LICENSE)
