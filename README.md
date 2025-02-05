@@ -22,6 +22,9 @@ CSES is a universal course schedule exchange schema that can be used for exchang
 
 ## Schema
 
+File Name: xxx.yml/xxx.yaml
+Codec: UTF-8
+
 ```yaml
 version: 1
 subjects:
