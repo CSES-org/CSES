@@ -44,7 +44,7 @@ subjects:
 
 schedules:
   - name: Monday
-    enable_day: mon
+    enable_day: 1
     weeks: all
     classes:
       - subject: Math
@@ -54,7 +54,7 @@ schedules:
         start_time: "09:00:00"
         end_time: "10:00:00"
   - name: Tuesday-Odd
-    enable_day: tue
+    enable_day: 2
     weeks: odd
     classes:
       - subject: Physics
@@ -64,7 +64,7 @@ schedules:
         start_time: "09:00:00"
         end_time: "10:00:00"
   - name: Tuesday-Even
-    enable_day: tue
+    enable_day: 2
     weeks: even
     classes:
       - subject: Chemistry
