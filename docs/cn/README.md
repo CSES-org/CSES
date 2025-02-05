@@ -45,7 +45,7 @@ subjects:
 
 schedules:
   - name: 星期一
-    enable_day: mon
+    enable_day: 1
     weeks: all
     classes:
       - subject: 数学
@@ -55,7 +55,7 @@ schedules:
         start_time: "09:00:00"
         end_time: "10:00:00"
   - name: 星期二-单周
-    enable_day: tue
+    enable_day: 2
     weeks: odd
     classes:
       - subject: 物理
@@ -65,7 +65,7 @@ schedules:
         start_time: "09:00:00"
         end_time: "10:00:00"
   - name: 星期二-双周
-    enable_day: tue
+    enable_day: 2
     weeks: even
     classes:
       - subject: 物理
