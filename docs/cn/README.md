@@ -23,6 +23,9 @@ CSES 是一种通用的课程表交换格式，用于在不同软件之间交换
 
 ## 示例
 
+文件名: xxx.yml/xxx.yaml
+编码: UTF-8
+
 ```yaml
 version: 1
 subjects:
