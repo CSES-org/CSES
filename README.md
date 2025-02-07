@@ -1,94 +1,94 @@
+
 <div align="center">
 
 <image src="http://m.qpic.cn/psc?/V51UyG6T2hLdbN0oEgHl3fEkH73KqJt7/TmEUgtj9EK6.7V8ajmQrEEsEylM*52lTktZHLze*PTbMCd2wg4o5kkEyKNVsVL9UM5xK4GLClF.TOL*ty*FnqAuxBQmobbAoJ.gYMo62EQY!/mnull&bo=wADAAAAAAAADByI!&rf=photolist&t=5" height="64"/>
 
 # CSES
 
-The Course Schedule Exchange Schema
+通用的课程表交换格式
 
-**English** | [**中文简体**](./docs/cn/README.md)
+[**English**](../../README.md) | **中文简体**
 
 </div>
 
-## Introduction
+## 简介
 
-CSES is a universal course schedule exchange schema that can be used for exchanging schedules between different software. It is designed to be simple and easy to use, and can be easily converted to other formats such as ClassIsland format.
+CSES 是一种通用的课程表交换格式，用于在不同软件之间交换课程表。它被设计为简单易用，可以轻松转换为其他格式，如 ClassIsland 格式。
 
-## Features
+## 特点
 
-- **Simple**: CSES is designed to be simple and easy to use.
-- **Universal**: CSES is a universal format that can be easily converted to other formats.
-- **Easy to use**: CSES is easy to use and can be easily understood by humans.
+- **简单**: CSES 被设计为简单易用。
+- **通用**: CSES 是一种通用格式，可以轻松转换为其他格式。
+- **易用**: CSES 易于使用，可以轻松被人类理解。
 
-## Code Completion
+## 代码补全
 
-You can enable code completion by importing the [Schema file] and configuring it as follows.
+你可以通过引入 [Schema 文件](https://raw.githubusercontent.com/CSES-org/CSES/refs/heads/main/cses.schema.json)，
+并进行以下配置来启用代码补全。
 
 - [VS Ccode](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 - [JetBrains](https://www.jetbrains.com/help/idea/yaml.html#use-schema-keyword)
 - [Zed Editor](https://zed.dev/docs/languages/yaml#schemas)
 
-[Schema file]: https://raw.githubusercontent.com/CSES-org/CSES/refs/heads/main/cses.schema.json
+## 示例
 
-## Example
-
-File Name: xxx.yml/xxx.yaml
-Codec: UTF-8
+文件名: xxx.yml/xxx.yaml
+编码: UTF-8
 
 ```yaml
 version: 1
 subjects:
-  - name: Math
-    simplified_name: M # Optional, Better for Chinese subject name
-    teacher: Mr. A # Optional
-    room: 101 # Optional
-  - name: English
-    simplified_name: E
-    teacher: Mr. B
+  - name: 数学
+    simplified_name: 数 # 可选，适合中文科目名，ClassIsland 等紧凑课程表软件一般需要
+    teacher: 李梅 # 可选
+    room: 101 # 可选
+  - name: 语文
+    simplified_name: 语
+    teacher: 王芳
     room: 102
-  - name: Physics
-    simplified_name: P
-    teacher: Mr. C
+  - name: 英语
+    simplified_name: 英
+    teacher: 张伟
     room: 103
-  - name: Chemistry
-    simplified_name: C
-    teacher: Mr. D
+  - name: 物理
+    simplified_name: 物
+    teacher: 赵军
     room: 104
 
 schedules:
-  - name: Monday
+  - name: 星期一
     enable_day: 1
     weeks: all
     classes:
-      - subject: Math
+      - subject: 数学
         start_time: "08:00:00"
         end_time: "09:00:00"
-      - subject: English
+      - subject: 语文
         start_time: "09:00:00"
         end_time: "10:00:00"
-  - name: Tuesday-Odd
+  - name: 星期二-单周
     enable_day: 2
     weeks: odd
     classes:
-      - subject: Physics
+      - subject: 物理
         start_time: "08:00:00"
         end_time: "09:00:00"
-      - subject: English
+      - subject: 英语
         start_time: "09:00:00"
         end_time: "10:00:00"
-  - name: Tuesday-Even
+  - name: 星期二-双周
     enable_day: 2
     weeks: even
     classes:
-      - subject: Chemistry
+      - subject: 物理
         start_time: "08:00:00"
         end_time: "09:00:00"
-      - subject: English
+      - subject: 英语
         start_time: "09:00:00"
         end_time: "10:00:00"
 ```
 
-## License
+## 协议
 
 [MIT](./LICENSE)
 
