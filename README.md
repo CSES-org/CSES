@@ -35,23 +35,23 @@ version: 1
 ### Define subjects
 ```yaml
 subjects:
-    - name: Math
-      simplified_name: M # Optional, Better for Chinese subject name
-      teacher: Mr. A # Optional
-      room: 101 # Optional
+  - name: Math
+    simplified_name: M # Optional, Better for Chinese subject name
+    teacher: Mr. A # Optional
+    room: 101 # Optional
 ```
 
 ### Define schedules
 
 ```yaml
 schedules:
-    - name: Monday
-      enable_day: 1 # Day, range 1-7
-      weeks: all # Enable on all weeks. You can fill [ "all" | "odd" | "even" ] in it. Each for all weeks, odd weeks and even weeks.
-      classes:
-        - subject: Math # Subject name. Be attention not the simplified name.
-          start_time: "08:00:00" # The time when class begins. Format: "HH:MM:SS"
-          end_time: "09:00;00" # The time when class dismiss. Format: "HH:MM:SS"
+  - name: Monday
+    enable_day: 1 # Day, range 1-7
+    weeks: all # Enable on all weeks. You can fill [ "all" | "odd" | "even" ] in it. Each for all weeks, odd weeks and even weeks.
+    classes:
+      - subject: Math # Subject name. Be attention not the simplified name.
+        start_time: "08:00:00" # The time when class begins. Format: "HH:MM:SS"
+        end_time: "09:00;00" # The time when class dismiss. Format: "HH:MM:SS"
 ```
 
 ## Schema
