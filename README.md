@@ -20,7 +20,17 @@ CSES is a universal course schedule exchange schema that can be used for exchang
 - **Universal**: CSES is a universal format that can be easily converted to other formats.
 - **Easy to use**: CSES is easy to use and can be easily understood by humans.
 
-## Schema
+## Code Completion
+
+You can enable code completion by importing the [Schema file] and configuring it as follows.
+
+- [VS Ccode](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+- [JetBrains](https://www.jetbrains.com/help/idea/yaml.html#use-schema-keyword)
+- [Zed Editor](https://zed.dev/docs/languages/yaml#schemas)
+
+[Schema file]: https://raw.githubusercontent.com/CSES-org/CSES/refs/heads/main/cses.schema.json
+
+## Example
 
 File Name: xxx.yml/xxx.yaml
 Codec: UTF-8

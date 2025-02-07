@@ -21,6 +21,15 @@ CSES 是一种通用的课程表交换格式，用于在不同软件之间交换
 - **通用**: CSES 是一种通用格式，可以轻松转换为其他格式。
 - **易用**: CSES 易于使用，可以轻松被人类理解。
 
+## 代码补全
+
+你可以通过引入 [Schema 文件](https://raw.githubusercontent.com/CSES-org/CSES/refs/heads/main/cses.schema.json)，
+并进行以下配置来启用代码补全。
+
+- [VS Ccode](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+- [JetBrains](https://www.jetbrains.com/help/idea/yaml.html#use-schema-keyword)
+- [Zed Editor](https://zed.dev/docs/languages/yaml#schemas)
+
 ## 示例
 
 文件名: xxx.yml/xxx.yaml
