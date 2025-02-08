@@ -1,0 +1,221 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "definitions": {
+    "class": {
+      "title": "课程安排",
+      "description": "由课程名、开始时间、结束时间组成的课程安排对象。",
+      "type": "object",
+      "properties": {
+        "subject": {
+          "title": "课程名",
+          "type": "string",
+          "description": "subjects 中任一 subject 的 name 字段。",
+          "examples": [
+            "数学",
+            "语文"
+          ]
+        },
+        "start_time": {
+          "title": "开始时间",
+          "description": "课程开始时间，格式为 HH:MM:SS",
+          "type": "string",
+          "pattern": "([01]\\d|2[0-3]):([0-5]\\d):([0-5]\\d)",
+          "examples": [
+            "08:00:00",
+            "13:30:00"
+          ]
+        },
+        "end_time": {
+          "title": "结束时间",
+          "description": "课程结束时间，格式为 HH:MM:SS",
+          "type": "string",
+          "pattern": "([01]\\d|2[0-3]):([0-5]\\d):([0-5]\\d)",
+          "examples": [
+            "08:40:00",
+            "14:10:00"
+          ]
+        }
+      },
+      "required": [
+        "subject",
+        "start_time",
+        "end_time"
+      ]
+    },
+    "schedule": {
+      "title": "课程表",
+      "description": "CSES 日课程表",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "名称",
+          "type": "string",
+          "description": "课程表的名称",
+          "examples": [
+            "all-mon"
+          ]
+        },
+        "enable_day": {
+          "title": "启用日",
+          "type": "integer",
+          "description": "启用的日数，1-7 表示周一到周日",
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "weeks": {
+          "title": "周数",
+          "type": "string",
+          "description": "周数，all 表示全周，odd 表示单周，even 表示双周",
+          "enum": [
+            "all",
+            "odd",
+            "even"
+          ]
+        },
+        "classes": {
+          "title": "课程",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/class"
+          },
+          "description": "课程安排数组",
+          "examples": [
+            [
+              {
+                "subject": "数学",
+                "start_time": "08:00:00",
+                "end_time": "08:40:00"
+              },
+              {
+                "subject": "语文",
+                "start_time": "13:30:00",
+                "end_time": "14:10:00"
+              }
+            ]
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "enable_day",
+        "weeks",
+        "classes"
+      ]
+    },
+    "subject": {
+      "title": "课程",
+      "description": "课程对象",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "名称",
+          "type": "string",
+          "description": "课程名称",
+          "examples": [
+            "数学",
+            "语文"
+          ]
+        },
+        "teacher": {
+          "title": "教师",
+          "type": "string",
+          "description": "任课教师",
+          "examples": [
+            "张三",
+            "李四"
+          ]
+        },
+        "room": {
+          "title": "教室",
+          "type": "string",
+          "description": "上课教室",
+          "examples": [
+            "101",
+            "102"
+          ]
+        },
+        "simplified_name": {
+          "title": "简称",
+          "type": "string",
+          "description": "课程简称",
+          "examples": [
+            "数",
+            "语"
+          ]
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  "properties": {
+    "version": {
+      "const": 1,
+      "type": "integer",
+      "title": "Version",
+      "description": "CSES 的版本号"
+    },
+    "subjects": {
+      "title": "课程列表",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/subject"
+      },
+      "description": "课程列表",
+      "examples": [
+        [
+          {
+            "name": "数学",
+            "teacher": "张三",
+            "room": "101",
+            "simplified_name": "数"
+          },
+          {
+            "name": "语文",
+            "teacher": "李四",
+            "room": "102",
+            "simplified_name": "语"
+          }
+        ]
+      ]
+    },
+    "schedules": {
+      "title": "课程表列表",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/schedule"
+      },
+      "description": "课程表列表",
+      "examples": [
+        [
+          {
+            "name": "all-mon",
+            "enable_day": 1,
+            "weeks": "all",
+            "classes": [
+              {
+                "subject": "数学",
+                "start_time": "08:50:00",
+                "end_time": "08:40:00"
+              },
+              {
+                "subject": "语文",
+                "start_time": "13:30:00",
+                "end_time": "14:10:00"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  }
+}

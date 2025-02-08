@@ -1,0 +1,50 @@
+version: 1 # 只能为 1
+subjects:
+  - name: 数学 # 任意 string
+    simplified_name: 数 # 可选，任意 string，适合中文科目名，ClassIsland 等紧凑课程表软件一般需要
+    teacher: 李梅 # 可选，任意 string
+    room: "101" # 可选，任意 string
+  - name: 语文
+    simplified_name: 语
+    teacher: 王芳
+    room: "102"
+  - name: 英语
+    simplified_name: 英
+    teacher: 张伟
+    room: "103"
+  - name: 物理
+    simplified_name: 物
+    teacher: 赵军
+    room: "104"
+
+schedules:
+  - name: 星期一 # 任意 string
+    enable_day: 1 # 1-7 的整数，即周一到周日
+    weeks: all # all、odd、even 中的任意一个，即两周都开启、单周开启、双周开启
+    classes:
+      - subject: 数学 # 任意 string
+        start_time: "08:00:00" # HH:MM:SS 的任意字符串，即 "00:00:00" 到 "23:59:59"
+        end_time: "09:00:00" # 同 start_time
+      - subject: 语文
+        start_time: "09:00:00"
+        end_time: "10:00:00"
+  - name: 星期二-单周
+    enable_day: 2
+    weeks: odd
+    classes:
+      - subject: 物理
+        start_time: "08:00:00"
+        end_time: "09:00:00"
+      - subject: 英语
+        start_time: "09:00:00"
+        end_time: "10:00:00"
+  - name: 星期二-双周
+    enable_day: 2
+    weeks: even
+    classes:
+      - subject: 物理
+        start_time: "08:00:00"
+        end_time: "09:00:00"
+      - subject: 英语
+        start_time: "09:00:00"
+        end_time: "10:00:00"
