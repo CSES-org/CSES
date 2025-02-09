@@ -7,8 +7,6 @@
 
 通用的课程表交换格式
 
-[**English**](../../README.md) | **中文简体**
-
 </div>
 
 ## 简介
@@ -26,8 +24,8 @@ CSES 是一种通用的课程表交换格式，用于在不同软件之间交换
 你可以通过引入 [Schema 文件](https://raw.githubusercontent.com/CSES-org/CSES/refs/heads/main/cses.schema.json)，
 并进行以下配置来启用代码补全。
 
-- [VS Ccode](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
-- [JetBrains](https://www.jetbrains.com/help/idea/yaml.html#use-schema-keyword)
+- [VS Code](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+- [JetBrains IDE](https://www.jetbrains.com/help/idea/yaml.html#use-schema-keyword)
 - [Zed Editor](https://zed.dev/docs/languages/yaml#schemas)
 
 ## 要求
